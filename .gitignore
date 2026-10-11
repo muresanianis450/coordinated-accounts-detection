@@ -1,0 +1,6 @@
+.venv
+data/
+__pychache__/
+.idea/
+/data/processed/
+
