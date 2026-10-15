@@ -117,7 +117,7 @@ def behavior_row(g):
         # Near 0 = very regular posting; large = irregular.
         "gap_cv":  sd / mu if mu > 0 else np.nan,
         # Burstiness B = (sd-mu) / (sd + mu), between -1 and 1.
-        "burstiness": (sd - mu) / (sd + mu) if sd > 0 else np.nan,
+        "burstiness": (sd - mu) / (sd + mu) if (sd + mu) > 0 else np.nan,
         # Fraction of gaps shorter than 60 seconds (rapid-fire posting)
         "frac_gap_lt_60s": (gaps < 60).mean(),
 
@@ -138,11 +138,70 @@ def behavior_row(g):
         "repost_share": g.is_repost.mean(),
         # Fraction of posts that are replies (the "reply to" field is filled in)
         "reply_share": g.in_reply_to_postid.notna().mean(),
+
+        # Diagnostic only: observation window covered by the capped posts.
+        "window_days": (t.max() - t.min()).total_seconds() / 86400,
     }
+
+def window_table(capped):
+    """One row per account with its observation window and class label."""
+    W = capped.groupby("accountid").agg(
+        first=("post_time", "min"),
+        last=("post_time", "max"),
+        is_control=("is_control", "first"),
+    )
+    W["window_days"] = (
+    (W["last"] - W["first"]).dt.total_seconds() / 86400 # days
+    )
+    W["bin"] = pd.cut(
+        W["window_days"],
+        bins=WINDOWS_EDGES_DAYS,
+        include_lowest=True
+    )
+    return W
+
+def match_windows(capped):
+    """Keep accounts in window bins containing enough examples of both classes. """
+    W = window_table(capped)
+
+    counts = (
+        W.groupby(["bin","is_control"],observed=True)
+        .size()
+        .unstack(fill_value=0)
+        .reindex(columns=[False,True],fill_value=0)
+        )
+
+    counts.columns = ["IO","control"]
+
+    ok = counts[
+        (counts.IO >= MIN_PER_CLASS_PER_BIN) &
+        (counts.control >= MIN_PER_CLASS_PER_BIN)
+    ]
+
+    print("Acounts per window bin (days), before matching")
+    print(counts.rename_axis("bin").to_string().replace("\n","\n   "))
+
+    keep_acc = W.index[
+        W["bin"].astype(str).isin(ok.index.astype(str))
+    ]
+
+    return capped[capped.accountid.isin(keep_acc)]
+
+
+def count_classes(capped):
+    """Return the number of IO accounts and control accounts."""
+    lab = capped.groupby("accountid").is_control.first()
+
+    return int((~lab).sum()), int(lab.sum())
 
 def build(name):
     """Full pipeline for one campaign: load -> meta features -> behavior features -> save."""
     df = load_campaign(name)
+
+    # Give IO and control accounts the same timestamp resolution.
+    if FLOOR_TO_MINUTE:
+        df["post_time"] = df["post_time"].dt.floor("min")
+
     acc = meta_features(df)     #one row per account (computed on ALL posts, uncapped)
 
     # Sanity check: count accounts per class and compare with Table 1 of the paper.
@@ -158,6 +217,26 @@ def build(name):
     # head(N) after groupby return the first N rows of each group.
     capped = (df[df.accountid.isin(keep)].sort_values("post_time")
               .groupby("accountid").head(CAP_POSTS))
+
+    print(
+        f"  after MIN_POSTS: "
+        f"IO={count_classes(capped)[0]} "
+        f"control={count_classes(capped)[1]}"
+    )
+
+    # Keep only accounts observed over comparable periods.
+    if MATCH_WINDOWS:
+        capped = match_windows(capped)
+
+        print(
+            f"  after window matching: "
+            f"IO={count_classes(capped)[0]} "
+            f"control={count_classes(capped)[1]}"
+        )
+
+    if capped.empty:
+        print("  no accounts left, campaign skipped")
+        return
 
     # Compute behavior_row for every account and collect the results.
     # capped.groupby("accountid") yields (account id, that account's posts).
@@ -175,11 +254,19 @@ def build(name):
     out["campaign"] = name
     out = out.drop(columns=["is_control"])      # redundant now that we have "label"
 
+    # A campaign without IO accounts cannot be used as a test set.
+    if out.label.sum() == 0:
+        print("  no IO accounts left, campaign skipped")
+        return
+
     # Save the account-level table for evaluate.py
     out.to_parquet(OUT / f"{name}.parquet")
     print(f" kept {len(out)} accounts, positives = {out.label.sum()}")
 
 
-if __name__ == "__main__" :
+if __name__ == "__main__":
+    print(f"Run tag: {RUN_TAG} -> saving in {OUT}")
+
     for c in CAMPAIGNS:
         build(c)
+
