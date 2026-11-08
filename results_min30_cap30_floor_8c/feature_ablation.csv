@@ -1,0 +1,81 @@
+features,test,n_features,n_pos,pr_auc,ci_low,ci_high,dummy,pr_auc_logreg,pr_auc_rf,pr_auc_hgb
+behavior (all),Armenia,12,19,0.264,0.13,0.436,0.026,0.087,0.29,0.414
+behavior (all),Bangladesh,12,8,0.69,0.41,0.878,0.023,0.369,0.887,0.814
+behavior (all),Catalonia,12,30,0.903,0.793,0.997,0.025,0.897,0.906,0.906
+behavior (all),China_1,12,440,0.41,0.365,0.452,0.023,0.385,0.403,0.443
+behavior (all),China_2,12,166,0.481,0.412,0.548,0.009,0.428,0.489,0.527
+behavior (all),Cuba,12,437,0.163,0.138,0.192,0.033,0.09,0.2,0.2
+behavior (all),Ecuador,12,416,0.59,0.547,0.633,0.05,0.579,0.615,0.576
+behavior (all),Egypt,12,214,0.911,0.88,0.933,0.56,0.874,0.923,0.936
+timing only,Armenia,5,19,0.128,0.059,0.278,0.026,0.103,0.108,0.173
+timing only,Bangladesh,5,8,0.594,0.277,0.872,0.023,0.421,0.671,0.692
+timing only,Catalonia,5,30,0.901,0.791,0.995,0.025,0.896,0.902,0.904
+timing only,China_1,5,440,0.386,0.346,0.428,0.023,0.434,0.308,0.417
+timing only,China_2,5,166,0.451,0.383,0.524,0.009,0.442,0.419,0.493
+timing only,Cuba,5,437,0.092,0.073,0.115,0.033,0.078,0.093,0.104
+timing only,Ecuador,5,416,0.472,0.429,0.513,0.05,0.469,0.439,0.509
+timing only,Egypt,5,214,0.892,0.861,0.919,0.56,0.892,0.881,0.904
+content only,Armenia,5,19,0.069,0.033,0.156,0.026,0.034,0.102,0.07
+content only,Bangladesh,5,8,0.185,0.067,0.386,0.023,0.057,0.108,0.39
+content only,Catalonia,5,30,0.065,0.043,0.111,0.025,0.056,0.044,0.095
+content only,China_1,5,440,0.04,0.035,0.048,0.023,0.026,0.048,0.048
+content only,China_2,5,166,0.028,0.02,0.043,0.009,0.008,0.029,0.046
+content only,Cuba,5,437,0.047,0.041,0.054,0.033,0.022,0.061,0.058
+content only,Ecuador,5,416,0.095,0.084,0.109,0.05,0.06,0.101,0.123
+content only,Egypt,5,214,0.636,0.576,0.696,0.56,0.489,0.707,0.712
+activity only,Armenia,2,19,0.029,0.017,0.059,0.026,0.019,0.037,0.032
+activity only,Bangladesh,2,8,0.02,0.008,0.036,0.023,0.02,0.02,0.02
+activity only,Catalonia,2,30,0.025,0.017,0.045,0.025,0.016,0.029,0.029
+activity only,China_1,2,440,0.021,0.019,0.023,0.023,0.016,0.024,0.023
+activity only,China_2,2,166,0.011,0.01,0.015,0.009,0.012,0.012,0.011
+activity only,Cuba,2,437,0.042,0.037,0.047,0.033,0.028,0.048,0.051
+activity only,Ecuador,2,416,0.067,0.06,0.078,0.05,0.038,0.08,0.084
+activity only,Egypt,2,214,0.631,0.573,0.688,0.56,0.54,0.668,0.687
+behavior without timing,Armenia,7,19,0.165,0.065,0.304,0.026,0.034,0.21,0.25
+behavior without timing,Bangladesh,7,8,0.193,0.068,0.35,0.023,0.043,0.108,0.427
+behavior without timing,Catalonia,7,30,0.062,0.044,0.098,0.025,0.023,0.082,0.083
+behavior without timing,China_1,7,440,0.044,0.038,0.052,0.023,0.019,0.06,0.053
+behavior without timing,China_2,7,166,0.035,0.027,0.048,0.009,0.009,0.049,0.048
+behavior without timing,Cuba,7,437,0.075,0.066,0.088,0.033,0.029,0.11,0.086
+behavior without timing,Ecuador,7,416,0.117,0.101,0.135,0.05,0.063,0.147,0.14
+behavior without timing,Egypt,7,214,0.69,0.639,0.742,0.56,0.522,0.763,0.784
+behavior without content,Armenia,7,19,0.132,0.065,0.268,0.026,0.073,0.105,0.218
+behavior without content,Bangladesh,7,8,0.532,0.244,0.821,0.023,0.404,0.579,0.613
+behavior without content,Catalonia,7,30,0.901,0.796,0.997,0.025,0.896,0.903,0.903
+behavior without content,China_1,7,440,0.353,0.313,0.398,0.023,0.372,0.3,0.388
+behavior without content,China_2,7,166,0.447,0.383,0.517,0.009,0.441,0.413,0.488
+behavior without content,Cuba,7,437,0.104,0.087,0.129,0.033,0.076,0.122,0.115
+behavior without content,Ecuador,7,416,0.501,0.458,0.546,0.05,0.449,0.494,0.56
+behavior without content,Egypt,7,214,0.907,0.881,0.93,0.56,0.89,0.903,0.928
+behavior without activity,Armenia,10,19,0.184,0.077,0.36,0.026,0.136,0.183,0.234
+behavior without activity,Bangladesh,10,8,0.713,0.51,0.876,0.023,0.359,0.929,0.851
+behavior without activity,Catalonia,10,30,0.905,0.797,0.997,0.025,0.899,0.907,0.909
+behavior without activity,China_1,10,440,0.411,0.369,0.455,0.023,0.429,0.382,0.423
+behavior without activity,China_2,10,166,0.472,0.406,0.54,0.009,0.427,0.485,0.505
+behavior without activity,Cuba,10,437,0.132,0.107,0.159,0.033,0.079,0.161,0.156
+behavior without activity,Ecuador,10,416,0.566,0.524,0.606,0.05,0.565,0.569,0.565
+behavior without activity,Egypt,10,214,0.905,0.875,0.93,0.56,0.879,0.908,0.927
+behavior without speed features,Armenia,10,19,0.187,0.064,0.346,0.026,0.044,0.239,0.277
+behavior without speed features,Bangladesh,10,8,0.485,0.277,0.655,0.023,0.125,0.727,0.602
+behavior without speed features,Catalonia,10,30,0.184,0.122,0.288,0.025,0.103,0.222,0.228
+behavior without speed features,China_1,10,440,0.083,0.071,0.101,0.023,0.05,0.108,0.09
+behavior without speed features,China_2,10,166,0.124,0.095,0.162,0.009,0.044,0.162,0.168
+behavior without speed features,Cuba,10,437,0.1,0.088,0.114,0.033,0.052,0.122,0.125
+behavior without speed features,Ecuador,10,416,0.257,0.229,0.292,0.05,0.235,0.282,0.254
+behavior without speed features,Egypt,10,214,0.833,0.788,0.871,0.56,0.811,0.843,0.847
+timing without speed features,Armenia,3,19,0.044,0.026,0.096,0.026,0.041,0.05,0.042
+timing without speed features,Bangladesh,3,8,0.248,0.063,0.572,0.023,0.211,0.25,0.283
+timing without speed features,Catalonia,3,30,0.116,0.071,0.216,0.025,0.086,0.075,0.186
+timing without speed features,China_1,3,440,0.076,0.063,0.098,0.023,0.086,0.043,0.099
+timing without speed features,China_2,3,166,0.107,0.075,0.151,0.009,0.086,0.061,0.174
+timing without speed features,Cuba,3,437,0.053,0.046,0.061,0.033,0.055,0.046,0.058
+timing without speed features,Ecuador,3,416,0.145,0.125,0.171,0.05,0.156,0.1,0.18
+timing without speed features,Egypt,3,214,0.841,0.8,0.878,0.56,0.862,0.818,0.843
+window length only (probe),Armenia,1,19,0.376,0.247,0.569,0.026,0.223,0.374,0.531
+window length only (probe),Bangladesh,1,8,0.633,0.394,0.861,0.023,0.54,0.588,0.771
+window length only (probe),Catalonia,1,30,0.424,0.315,0.563,0.025,0.509,0.316,0.447
+window length only (probe),China_1,1,440,0.465,0.43,0.502,0.023,0.61,0.271,0.513
+window length only (probe),China_2,1,166,0.361,0.308,0.417,0.009,0.451,0.235,0.397
+window length only (probe),Cuba,1,437,0.337,0.301,0.37,0.033,0.223,0.27,0.519
+window length only (probe),Ecuador,1,416,0.564,0.528,0.6,0.05,0.45,0.47,0.772
+window length only (probe),Egypt,1,214,0.959,0.944,0.971,0.56,0.984,0.917,0.974

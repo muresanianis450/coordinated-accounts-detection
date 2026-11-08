@@ -1,0 +1,10 @@
+features,Armenia,Bangladesh,Catalonia,China_1,China_2,Cuba,Ecuador,Egypt
+n_posts_total only,0.189,0.885,0.26,0.467,0.495,0.677,0.496,0.872
+followers only,0.036,0.031,0.046,0.12,0.009,0.034,0.14,0.674
+following only,0.05,0.071,0.034,0.032,0.01,0.035,0.08,0.563
+span_days only,0.201,0.656,0.159,0.334,0.307,0.192,0.347,0.993
+account_age_days only,0.045,0.034,0.03,0.024,0.012,0.036,0.064,0.541
+all meta (reference),0.596,0.95,0.667,0.645,0.685,0.829,0.942,0.971
+meta without n_posts_total,0.583,0.798,0.683,0.627,0.463,0.482,0.897,0.852
+behavior (reference),0.29,0.887,0.906,0.403,0.489,0.2,0.615,0.923
+behavior + meta without n_posts_total,0.766,0.986,0.929,0.749,0.782,0.631,0.973,0.997

@@ -1,0 +1,10 @@
+features,Armenia,Bangladesh,Catalonia
+n_posts_total only,0.237,1.0,0.31
+followers only,0.092,0.667,0.178
+following only,0.072,0.628,0.102
+span_days only,0.106,0.679,0.365
+account_age_days only,0.068,0.544,0.121
+all meta (reference),0.298,1.0,0.841
+meta without n_posts_total,0.282,0.897,0.824
+behavior (reference),0.077,0.811,0.659
+behavior + meta without n_posts_total,0.162,0.976,0.839

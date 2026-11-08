@@ -52,12 +52,10 @@ def models():
         "logreg": make_pipeline(imp(),StandardScaler(),
                                 LogisticRegression(class_weight="balanced",max_iter=2000)),
         "rf": make_pipeline(imp(), RandomForestClassifier(n_estimators= 300, class_weight="balanced", random_state=SEED, n_jobs=-1)),
-        "hgb": make_pipeline(
-    imp(),
-    HistGradientBoostingClassifier(
+        "hgb": HistGradientBoostingClassifier(
         class_weight="balanced",
         random_state=SEED
-    )
+
 )
     }
 
@@ -203,7 +201,7 @@ if len(leak.columns) <= 8:  # write the numbers in the cells (few campaigns only
                     color="white" if v < 0.6 else "black")  # white text on dark cells
 fig.colorbar(im, ax=ax, label="PR-AUC")
 ax.set_title("Leakage diagnosis: PR-AUC by feature set\n"
-             "(dummy baseline is about 0.02 for every campaign)")
+             "(dummy baseline = positive rate of each campaign, see printed table)")
 fig.tight_layout()
 fig.savefig(f"{RESULTS}/fig1_leakage.png", dpi=150)
 
@@ -258,6 +256,6 @@ ax.legend(handles=handles, loc="lower right")
 fig.tight_layout()
 fig.savefig(f"{RESULTS}/fig3_random_vs_loco.png", dpi=150)
 
-print("\nDone. Tables and figures saved in the results/ folder.")
+print(f"\nDone. Tables and figures saved in {RESULTS}/")
 if SHOW_PLOTS:
     plt.show()  # opens all three figures; the script ends when you close them

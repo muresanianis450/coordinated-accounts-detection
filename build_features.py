@@ -145,6 +145,7 @@ def behavior_row(g):
 
 def window_table(capped):
     """One row per account with its observation window and class label."""
+    # TODO Plot bins to see how many IOs and controlled are there
     W = capped.groupby("accountid").agg(
         first=("post_time", "min"),
         last=("post_time", "max"),
@@ -263,6 +264,9 @@ def build(name):
     out.to_parquet(OUT / f"{name}.parquet")
     print(f" kept {len(out)} accounts, positives = {out.label.sum()}")
 
+    # TODO save the csv for each of the country so I can see the data
+    # How each
+    out.to_csv(OUT / f"{name}.csv")
 
 if __name__ == "__main__":
     print(f"Run tag: {RUN_TAG} -> saving in {OUT}")

@@ -4,7 +4,7 @@ DATA_ROOT = Path(r"C:\Users\mures\OneDrive\Desktop\Theses\Data\Extracted")
 OUT = Path("data/processed")
 OUT.mkdir(parents=True, exist_ok=True)
 
-CAMPAIGNS = ["Bangladesh", "Armenia", "Catalonia", "China_1"] # folder names
+CAMPAIGNS = ["Bangladesh", "Armenia", "Catalonia", "China_1", "China_2","Cuba", "Ecuador", "Egypt","Iran_1","Iran_2","Iran_3"] # folder names
 SEED = 42
 
 
@@ -66,4 +66,16 @@ OUT.mkdir(parents=True, exist_ok=True)
 # Sanity check against Table 1 of the paper: (IO accounts, control accounts).
 # build_features.py prints these next to the counts it finds in your files.
 # If they differ, something is wrong with the loading.
-EXPECTED = {"Bangladesh": (11,929), "Armenia":(31,1767), "Catalonia": (76,2607), "China_1": (699,42120)}
+EXPECTED = {
+    "Bangladesh": (11, 929),
+    "Armenia": (31, 1767),
+    "Catalonia": (76, 2607),
+    "China_1": (699, 42120),
+    "China_2": (191, 35806),
+    "Cuba": (503, 30099),
+    "Ecuador": (787, 21138),
+    "Egypt": (240, 370)   ,
+    "Iran_1": (660,5015),
+    "Iran_2": (389,6615),
+    "Iran_3": (210,2240),
+}

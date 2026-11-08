@@ -9,7 +9,7 @@
 #      campaign and measure how much the score drops.
 #
 # Run after build_features.py. Results go in a folder named after the settings
-# in config.py (e.g. results_min30_cap30/), so different settings never
+# in config.py (e.g. results_min30_cap30_1/), so different settings never
 # overwrite each other.
 # ---------------------------------------------------------------------------
 

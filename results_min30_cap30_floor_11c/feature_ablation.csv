@@ -1,0 +1,111 @@
+features,test,n_features,n_pos,pr_auc,ci_low,ci_high,dummy,pr_auc_logreg,pr_auc_rf,pr_auc_hgb
+behavior (all),Armenia,12,19,0.297,0.16,0.467,0.026,0.105,0.34,0.446
+behavior (all),Bangladesh,12,8,0.777,0.596,0.939,0.023,0.459,0.952,0.92
+behavior (all),Catalonia,12,30,0.906,0.799,0.998,0.025,0.899,0.91,0.907
+behavior (all),China_1,12,440,0.405,0.357,0.446,0.023,0.369,0.413,0.432
+behavior (all),China_2,12,166,0.517,0.453,0.582,0.009,0.448,0.542,0.562
+behavior (all),Cuba,12,437,0.16,0.135,0.19,0.033,0.07,0.212,0.198
+behavior (all),Ecuador,12,416,0.592,0.55,0.633,0.05,0.559,0.601,0.616
+behavior (all),Egypt,12,214,0.922,0.893,0.942,0.56,0.877,0.942,0.946
+behavior (all),Iran_1,12,540,0.791,0.764,0.815,0.202,0.694,0.842,0.837
+behavior (all),Iran_2,12,286,0.529,0.483,0.58,0.083,0.531,0.532,0.523
+behavior (all),Iran_3,12,192,0.489,0.431,0.553,0.169,0.387,0.528,0.552
+timing only,Armenia,5,19,0.128,0.067,0.265,0.026,0.115,0.107,0.164
+timing only,Bangladesh,5,8,0.503,0.199,0.826,0.023,0.411,0.421,0.678
+timing only,Catalonia,5,30,0.911,0.792,0.998,0.025,0.9,0.926,0.906
+timing only,China_1,5,440,0.389,0.352,0.434,0.023,0.426,0.307,0.433
+timing only,China_2,5,166,0.455,0.384,0.533,0.009,0.443,0.42,0.501
+timing only,Cuba,5,437,0.098,0.079,0.123,0.033,0.082,0.1,0.113
+timing only,Ecuador,5,416,0.475,0.432,0.52,0.05,0.487,0.425,0.512
+timing only,Egypt,5,214,0.889,0.856,0.916,0.56,0.894,0.866,0.908
+timing only,Iran_1,5,540,0.706,0.673,0.736,0.202,0.675,0.699,0.744
+timing only,Iran_2,5,286,0.476,0.421,0.527,0.083,0.437,0.457,0.533
+timing only,Iran_3,5,192,0.513,0.451,0.567,0.169,0.438,0.613,0.487
+content only,Armenia,5,19,0.142,0.053,0.265,0.026,0.031,0.252,0.144
+content only,Bangladesh,5,8,0.435,0.19,0.735,0.023,0.304,0.416,0.584
+content only,Catalonia,5,30,0.05,0.034,0.08,0.025,0.032,0.047,0.07
+content only,China_1,5,440,0.064,0.054,0.08,0.023,0.078,0.053,0.062
+content only,China_2,5,166,0.047,0.031,0.071,0.009,0.01,0.042,0.088
+content only,Cuba,5,437,0.046,0.042,0.054,0.033,0.021,0.061,0.056
+content only,Ecuador,5,416,0.094,0.083,0.112,0.05,0.045,0.11,0.127
+content only,Egypt,5,214,0.697,0.655,0.743,0.56,0.472,0.796,0.823
+content only,Iran_1,5,540,0.425,0.393,0.461,0.202,0.255,0.487,0.534
+content only,Iran_2,5,286,0.186,0.16,0.22,0.083,0.138,0.188,0.231
+content only,Iran_3,5,192,0.211,0.181,0.248,0.169,0.141,0.238,0.253
+activity only,Armenia,2,19,0.04,0.021,0.086,0.026,0.018,0.057,0.043
+activity only,Bangladesh,2,8,0.023,0.01,0.05,0.023,0.019,0.029,0.023
+activity only,Catalonia,2,30,0.02,0.015,0.032,0.025,0.016,0.023,0.023
+activity only,China_1,2,440,0.02,0.018,0.023,0.023,0.016,0.022,0.022
+activity only,China_2,2,166,0.012,0.01,0.014,0.009,0.012,0.011,0.012
+activity only,Cuba,2,437,0.043,0.039,0.049,0.033,0.029,0.049,0.051
+activity only,Ecuador,2,416,0.059,0.053,0.067,0.05,0.038,0.068,0.07
+activity only,Egypt,2,214,0.641,0.592,0.701,0.56,0.512,0.682,0.73
+activity only,Iran_1,2,540,0.236,0.216,0.261,0.202,0.19,0.254,0.263
+activity only,Iran_2,2,286,0.105,0.094,0.119,0.083,0.139,0.088,0.088
+activity only,Iran_3,2,192,0.157,0.138,0.182,0.169,0.164,0.153,0.153
+behavior without timing,Armenia,7,19,0.211,0.093,0.355,0.026,0.026,0.328,0.278
+behavior without timing,Bangladesh,7,8,0.347,0.044,0.6,0.023,0.047,0.44,0.553
+behavior without timing,Catalonia,7,30,0.056,0.037,0.086,0.025,0.017,0.075,0.076
+behavior without timing,China_1,7,440,0.045,0.037,0.058,0.023,0.017,0.059,0.059
+behavior without timing,China_2,7,166,0.049,0.036,0.074,0.009,0.013,0.059,0.077
+behavior without timing,Cuba,7,437,0.072,0.063,0.085,0.033,0.024,0.104,0.088
+behavior without timing,Ecuador,7,416,0.106,0.092,0.124,0.05,0.05,0.134,0.133
+behavior without timing,Egypt,7,214,0.726,0.683,0.774,0.56,0.501,0.825,0.852
+behavior without timing,Iran_1,7,540,0.473,0.436,0.507,0.202,0.269,0.581,0.569
+behavior without timing,Iran_2,7,286,0.194,0.17,0.225,0.083,0.201,0.176,0.204
+behavior without timing,Iran_3,7,192,0.205,0.174,0.243,0.169,0.142,0.219,0.255
+behavior without content,Armenia,7,19,0.135,0.059,0.252,0.026,0.076,0.091,0.238
+behavior without content,Bangladesh,7,8,0.515,0.192,0.812,0.023,0.394,0.507,0.645
+behavior without content,Catalonia,7,30,0.911,0.804,0.999,0.025,0.899,0.929,0.906
+behavior without content,China_1,7,440,0.343,0.306,0.387,0.023,0.375,0.242,0.411
+behavior without content,China_2,7,166,0.459,0.384,0.528,0.009,0.444,0.42,0.513
+behavior without content,Cuba,7,437,0.111,0.087,0.138,0.033,0.085,0.115,0.133
+behavior without content,Ecuador,7,416,0.484,0.443,0.529,0.05,0.475,0.434,0.543
+behavior without content,Egypt,7,214,0.9,0.869,0.927,0.56,0.892,0.886,0.923
+behavior without content,Iran_1,7,540,0.726,0.698,0.755,0.202,0.677,0.745,0.757
+behavior without content,Iran_2,7,286,0.481,0.429,0.535,0.083,0.458,0.485,0.499
+behavior without content,Iran_3,7,192,0.549,0.488,0.606,0.169,0.443,0.685,0.518
+behavior without activity,Armenia,10,19,0.24,0.14,0.392,0.026,0.144,0.201,0.376
+behavior without activity,Bangladesh,10,8,0.794,0.669,0.929,0.023,0.464,0.975,0.942
+behavior without activity,Catalonia,10,30,0.908,0.784,1.0,0.025,0.902,0.911,0.909
+behavior without activity,China_1,10,440,0.434,0.389,0.479,0.023,0.454,0.417,0.432
+behavior without activity,China_2,10,166,0.51,0.439,0.588,0.009,0.447,0.536,0.548
+behavior without activity,Cuba,10,437,0.131,0.11,0.157,0.033,0.064,0.171,0.157
+behavior without activity,Ecuador,10,416,0.578,0.541,0.62,0.05,0.547,0.574,0.614
+behavior without activity,Egypt,10,214,0.921,0.893,0.944,0.56,0.884,0.935,0.945
+behavior without activity,Iran_1,10,540,0.774,0.75,0.797,0.202,0.683,0.82,0.818
+behavior without activity,Iran_2,10,286,0.536,0.487,0.586,0.083,0.475,0.56,0.572
+behavior without activity,Iran_3,10,192,0.474,0.408,0.533,0.169,0.389,0.534,0.5
+behavior without speed features,Armenia,10,19,0.212,0.097,0.353,0.026,0.036,0.311,0.288
+behavior without speed features,Bangladesh,10,8,0.517,0.301,0.682,0.023,0.117,0.792,0.643
+behavior without speed features,Catalonia,10,30,0.156,0.106,0.247,0.025,0.062,0.207,0.198
+behavior without speed features,China_1,10,440,0.089,0.072,0.11,0.023,0.033,0.108,0.126
+behavior without speed features,China_2,10,166,0.166,0.129,0.213,0.009,0.084,0.191,0.223
+behavior without speed features,Cuba,10,437,0.095,0.083,0.113,0.033,0.04,0.13,0.116
+behavior without speed features,Ecuador,10,416,0.226,0.202,0.261,0.05,0.174,0.252,0.253
+behavior without speed features,Egypt,10,214,0.87,0.831,0.905,0.56,0.819,0.894,0.897
+behavior without speed features,Iran_1,10,540,0.605,0.569,0.643,0.202,0.441,0.695,0.68
+behavior without speed features,Iran_2,10,286,0.297,0.261,0.339,0.083,0.271,0.337,0.284
+behavior without speed features,Iran_3,10,192,0.354,0.297,0.421,0.169,0.28,0.371,0.411
+timing without speed features,Armenia,3,19,0.049,0.029,0.099,0.026,0.043,0.053,0.05
+timing without speed features,Bangladesh,3,8,0.163,0.056,0.385,0.023,0.189,0.101,0.2
+timing without speed features,Catalonia,3,30,0.119,0.074,0.217,0.025,0.099,0.067,0.191
+timing without speed features,China_1,3,440,0.074,0.061,0.092,0.023,0.081,0.039,0.103
+timing without speed features,China_2,3,166,0.103,0.074,0.144,0.009,0.087,0.064,0.158
+timing without speed features,Cuba,3,437,0.052,0.046,0.061,0.033,0.055,0.045,0.058
+timing without speed features,Ecuador,3,416,0.149,0.128,0.177,0.05,0.157,0.096,0.195
+timing without speed features,Egypt,3,214,0.836,0.79,0.872,0.56,0.864,0.799,0.844
+timing without speed features,Iran_1,3,540,0.423,0.382,0.459,0.202,0.416,0.34,0.511
+timing without speed features,Iran_2,3,286,0.2,0.169,0.235,0.083,0.183,0.159,0.257
+timing without speed features,Iran_3,3,192,0.371,0.319,0.434,0.169,0.335,0.417,0.361
+window length only (probe),Armenia,1,19,0.371,0.219,0.559,0.026,0.223,0.358,0.532
+window length only (probe),Bangladesh,1,8,0.675,0.464,0.9,0.023,0.54,0.698,0.786
+window length only (probe),Catalonia,1,30,0.48,0.362,0.619,0.025,0.509,0.468,0.463
+window length only (probe),China_1,1,440,0.492,0.453,0.537,0.023,0.61,0.347,0.519
+window length only (probe),China_2,1,166,0.369,0.318,0.421,0.009,0.449,0.261,0.398
+window length only (probe),Cuba,1,437,0.348,0.313,0.383,0.033,0.223,0.306,0.514
+window length only (probe),Ecuador,1,416,0.591,0.554,0.628,0.05,0.449,0.546,0.779
+window length only (probe),Egypt,1,214,0.966,0.953,0.976,0.56,0.984,0.935,0.979
+window length only (probe),Iran_1,1,540,0.898,0.876,0.915,0.202,0.905,0.843,0.944
+window length only (probe),Iran_2,1,286,0.633,0.586,0.681,0.083,0.528,0.622,0.748
+window length only (probe),Iran_3,1,192,0.688,0.632,0.743,0.169,0.557,0.672,0.834
