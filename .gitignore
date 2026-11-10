@@ -1,6 +1,4 @@
-.venv
-data/
-__pychache__/
-.idea/
-/data/processed/
-
+__pycache__/
+*.zip
+results_*/feature_report/features_all.csv
+results_*/feature_report/per_campaign/

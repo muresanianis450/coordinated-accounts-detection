@@ -1,0 +1,106 @@
+features,test,n_features,n_pos,dummy,pr_auc,lift,lift_low,lift_high,small
+main,Armenia,6,19,0.0257,0.0684,2.664,1.5221,5.2395,True
+main,Bangladesh,6,8,0.0225,0.1997,8.8603,3.5916,18.7593,True
+main,Catalonia,6,30,0.0251,0.1001,3.9832,2.4377,6.3872,False
+main,China_1,6,440,0.0226,0.0625,2.7616,2.4025,3.3578,False
+main,China_2,6,166,0.0094,0.0164,1.7374,1.4553,2.2605,False
+main,Cuba,6,437,0.0327,0.0573,1.749,1.5769,1.9867,False
+main,Ecuador,6,416,0.0499,0.1055,2.1127,1.8288,2.3478,False
+main,Egypt,6,214,0.5602,0.745,1.3298,1.2374,1.4173,False
+main,Iran_1,6,540,0.2018,0.3792,1.8791,1.7274,2.0624,False
+main,Iran_2,6,286,0.0828,0.1209,1.4608,1.3092,1.6825,False
+main,Iran_3,6,192,0.169,0.1638,0.9694,0.8352,1.1571,False
+main,Iran_4,6,985,0.2312,0.4333,1.8738,1.765,1.9872,False
+main,Iran_5,6,23,0.0448,0.3368,7.5113,5.0533,10.3643,False
+main,Iran_6,6,180,0.023,0.0894,3.8877,3.3081,4.7647,False
+main,Qatar,6,21,0.0027,0.0101,3.8115,2.2608,8.4688,False
+main,Russia_1,6,2597,0.1559,0.4475,2.8704,2.7638,2.9821,False
+main,Russia_2,6,243,0.203,0.8039,3.9602,3.7751,4.1562,False
+main,Russia_3,6,4,0.0107,0.132,12.3714,1.3123,34.339,True
+main,Russia_4,6,19,0.0011,0.0029,2.6486,1.4441,5.3863,True
+main,Russia_5,6,30,0.0047,0.0439,9.2447,4.9149,24.7812,False
+main,Spain,6,163,0.1902,0.7519,3.9531,3.6591,4.2513,False
+main + shortcut group,Armenia,10,19,0.0257,0.2395,9.3265,4.3636,14.8868,True
+main + shortcut group,Bangladesh,10,8,0.0225,0.7459,33.0997,20.1998,41.4416,True
+main + shortcut group,Catalonia,10,30,0.0251,0.914,36.378,32.1192,39.7623,False
+main + shortcut group,China_1,10,440,0.0226,0.4532,20.0136,18.1912,21.8354,False
+main + shortcut group,China_2,10,166,0.0094,0.4492,47.6494,39.2005,55.0884,False
+main + shortcut group,Cuba,10,437,0.0327,0.1345,4.1085,3.5433,4.9455,False
+main + shortcut group,Ecuador,10,416,0.0499,0.5017,10.0472,9.2864,10.8395,False
+main + shortcut group,Egypt,10,214,0.5602,0.9288,1.6579,1.6233,1.6895,False
+main + shortcut group,Iran_1,10,540,0.2018,0.803,3.9794,3.8549,4.0866,False
+main + shortcut group,Iran_2,10,286,0.0828,0.4687,5.6624,5.1175,6.3293,False
+main + shortcut group,Iran_3,10,192,0.169,0.427,2.5263,2.1648,2.925,False
+main + shortcut group,Iran_4,10,985,0.2312,0.8759,3.7881,3.7232,3.8345,False
+main + shortcut group,Iran_5,10,23,0.0448,0.9035,20.1516,17.4079,21.8943,False
+main + shortcut group,Iran_6,10,180,0.023,0.4228,18.3829,15.4937,21.233,False
+main + shortcut group,Qatar,10,21,0.0027,0.1014,38.0668,15.4719,86.1042,False
+main + shortcut group,Russia_1,10,2597,0.1559,0.8045,5.1605,5.0969,5.2306,False
+main + shortcut group,Russia_2,10,243,0.203,0.8947,4.4074,4.2438,4.5326,False
+main + shortcut group,Russia_3,10,4,0.0107,0.8161,76.5077,8.9706,93.75,True
+main + shortcut group,Russia_4,10,19,0.0011,0.4425,398.1302,194.0213,596.5677,True
+main + shortcut group,Russia_5,10,30,0.0047,0.5041,106.125,77.5773,140.5376,False
+main + shortcut group,Spain,10,163,0.1902,0.6908,3.6321,3.3089,3.9334,False
+shortcut group only,Armenia,4,19,0.0257,0.1057,4.1157,2.7243,7.2298,True
+shortcut group only,Bangladesh,4,8,0.0225,0.487,21.6094,8.0774,34.6388,True
+shortcut group only,Catalonia,4,30,0.0251,0.8985,35.7612,31.043,39.6302,False
+shortcut group only,China_1,4,440,0.0226,0.3789,16.7332,14.6141,18.4724,False
+shortcut group only,China_2,4,166,0.0094,0.4337,46.0103,37.8771,53.4498,False
+shortcut group only,Cuba,4,437,0.0327,0.0739,2.2558,1.7755,2.9073,False
+shortcut group only,Ecuador,4,416,0.0499,0.3538,7.0845,6.2713,7.8909,False
+shortcut group only,Egypt,4,214,0.5602,0.8648,1.5437,1.4798,1.5945,False
+shortcut group only,Iran_1,4,540,0.2018,0.7125,3.531,3.3816,3.6788,False
+shortcut group only,Iran_2,4,286,0.0828,0.4559,5.507,4.8553,6.1621,False
+shortcut group only,Iran_3,4,192,0.169,0.3638,2.1526,1.8198,2.4693,False
+shortcut group only,Iran_4,4,985,0.2312,0.8138,3.5196,3.446,3.5998,False
+shortcut group only,Iran_5,4,23,0.0448,0.8977,20.0231,17.4898,21.9008,False
+shortcut group only,Iran_6,4,180,0.023,0.3243,14.1,11.4641,17.2898,False
+shortcut group only,Qatar,4,21,0.0027,0.0873,32.7912,7.5577,89.9195,False
+shortcut group only,Russia_1,4,2597,0.1559,0.6525,4.1857,4.0969,4.2753,False
+shortcut group only,Russia_2,4,243,0.203,0.598,2.9457,2.7217,3.167,False
+shortcut group only,Russia_3,4,4,0.0107,0.7428,69.6383,4.6029,93.75,True
+shortcut group only,Russia_4,4,19,0.0011,0.4226,380.225,173.2331,560.7476,True
+shortcut group only,Russia_5,4,30,0.0047,0.4725,99.4698,65.52,131.4954,False
+shortcut group only,Spain,4,163,0.1902,0.4086,2.1482,1.8456,2.5035,False
+burstiness only,Armenia,1,19,0.0257,0.0339,1.3202,0.9197,2.4476,True
+burstiness only,Bangladesh,1,8,0.0225,0.0469,2.0829,0.9166,5.4347,True
+burstiness only,Catalonia,1,30,0.0251,0.0274,1.0906,0.7719,1.7517,False
+burstiness only,China_1,1,440,0.0226,0.0287,1.2674,1.1149,1.4804,False
+burstiness only,China_2,1,166,0.0094,0.0141,1.4928,1.1974,1.98,False
+burstiness only,Cuba,1,437,0.0327,0.0373,1.1388,1.0324,1.3007,False
+burstiness only,Ecuador,1,416,0.0499,0.0567,1.1351,1.0385,1.2706,False
+burstiness only,Egypt,1,214,0.5602,0.6149,1.0976,0.9992,1.1928,False
+burstiness only,Iran_1,1,540,0.2018,0.2179,1.08,1.0057,1.1767,False
+burstiness only,Iran_2,1,286,0.0828,0.0908,1.0966,0.991,1.3054,False
+burstiness only,Iran_3,1,192,0.169,0.2496,1.4769,1.2952,1.6631,False
+burstiness only,Iran_4,1,985,0.2312,0.2115,0.9145,0.8698,0.9794,False
+burstiness only,Iran_5,1,23,0.0448,0.0493,1.0988,0.7638,1.9352,False
+burstiness only,Iran_6,1,180,0.023,0.0243,1.0563,0.8472,1.413,False
+burstiness only,Qatar,1,21,0.0027,0.0028,1.0431,0.6655,1.7645,False
+burstiness only,Russia_1,1,2597,0.1559,0.1939,1.2438,1.1958,1.3022,False
+burstiness only,Russia_2,1,243,0.203,0.2832,1.3949,1.2378,1.6049,False
+burstiness only,Russia_3,1,4,0.0107,0.0165,1.5434,0.3205,6.0698,True
+burstiness only,Russia_4,1,19,0.0011,0.0013,1.1265,0.6603,2.8263,True
+burstiness only,Russia_5,1,30,0.0047,0.0046,0.9787,0.7208,1.4801,False
+burstiness only,Spain,1,163,0.1902,0.2133,1.1216,1.0048,1.2932,False
+window length only (probe),Armenia,1,19,0.0257,0.3967,15.4502,7.8376,24.3895,True
+window length only (probe),Bangladesh,1,8,0.0225,0.6366,28.2483,20.3845,37.8277,True
+window length only (probe),Catalonia,1,30,0.0251,0.4785,19.043,13.4519,25.5624,False
+window length only (probe),China_1,1,440,0.0226,0.5382,23.7676,21.7979,25.9191,False
+window length only (probe),China_2,1,166,0.0094,0.3725,39.5138,34.3788,44.6052,False
+window length only (probe),Cuba,1,437,0.0327,0.3883,11.8581,10.6725,13.1142,False
+window length only (probe),Ecuador,1,416,0.0499,0.6337,12.6906,11.9995,13.5123,False
+window length only (probe),Egypt,1,214,0.5602,0.9793,1.7481,1.7302,1.7659,False
+window length only (probe),Iran_1,1,540,0.2018,0.9269,4.5934,4.4778,4.6791,False
+window length only (probe),Iran_2,1,286,0.0828,0.6512,7.8662,7.2849,8.544,False
+window length only (probe),Iran_3,1,192,0.169,0.6776,4.0091,3.6698,4.3207,False
+window length only (probe),Iran_4,1,985,0.2312,0.9537,4.1246,4.0774,4.1843,False
+window length only (probe),Iran_5,1,23,0.0448,0.8989,20.0489,17.8755,22.2297,False
+window length only (probe),Iran_6,1,180,0.023,0.6735,29.2809,27.4358,31.5834,False
+window length only (probe),Qatar,1,21,0.0027,0.1128,42.3632,26.546,68.1327,False
+window length only (probe),Russia_1,1,2597,0.1559,0.8395,5.385,5.2977,5.4785,False
+window length only (probe),Russia_2,1,243,0.203,0.956,4.7094,4.5899,4.821,False
+window length only (probe),Russia_3,1,4,0.0107,0.8764,82.1615,67.7083,93.75,True
+window length only (probe),Russia_4,1,19,0.0011,0.0555,49.9512,29.6231,90.4444,True
+window length only (probe),Russia_5,1,30,0.0047,0.1678,35.3324,23.9818,52.6296,False
+window length only (probe),Spain,1,163,0.1902,0.8672,4.5595,4.3189,4.7649,False

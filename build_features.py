@@ -113,9 +113,6 @@ def behavior_row(g):
         "hour_entropy": -(p * np.log2(p)).sum(),
         # Typical (median) waiting time between posts, in seconds
         "gap_median_s": gaps.median(),
-        # Coefficient of variation = std / mean of the gaps.
-        # Near 0 = very regular posting; large = irregular.
-        "gap_cv":  sd / mu if mu > 0 else np.nan,
         # Burstiness B = (sd-mu) / (sd + mu), between -1 and 1.
         "burstiness": (sd - mu) / (sd + mu) if (sd + mu) > 0 else np.nan,
         # Fraction of gaps shorter than 60 seconds (rapid-fire posting)
@@ -272,5 +269,10 @@ if __name__ == "__main__":
     print(f"Run tag: {RUN_TAG} -> saving in {OUT}")
 
     for c in CAMPAIGNS:
-        build(c)
-
+        if (OUT / f"{c}.parquet").exists():  # already built in this RUN_TAG, skip
+            print(f"{c}: already built, skipped")
+            continue
+        try:
+            build(c)
+        except Exception as e:  # keep going, report at the end
+            print(f"{c}: FAILED -> {type(e).__name__}: {e}")

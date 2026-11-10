@@ -4,7 +4,10 @@ DATA_ROOT = Path(r"C:\Users\mures\OneDrive\Desktop\Theses\Data\Extracted")
 OUT = Path("data/processed")
 OUT.mkdir(parents=True, exist_ok=True)
 
-CAMPAIGNS = ["Bangladesh", "Armenia", "Catalonia", "China_1", "China_2","Cuba", "Ecuador", "Egypt","Iran_1","Iran_2","Iran_3"] # folder names
+CAMPAIGNS = ["Bangladesh", "Armenia", "Catalonia", "China_1", "China_2","Cuba", "Ecuador",
+             "Egypt","Iran_1","Iran_2","Iran_3","Iran_4","Iran_5","Iran_6","Qatar",
+             "Russia_1","Russia_2","Russia_3","Russia_4","Russia_5",
+             "Spain"] # folder names
 SEED = 42
 
 
@@ -36,7 +39,7 @@ FLOOR_TO_MINUTE = True
 #    keeps only accounts whose window lengths fall in a bin (see WINDOW_EDGE_DAYS)
 #    that contain accounts of BOTH classes, so IO and control accounts are
 #    compared at similar window lengths. This removes many accounts.
-MATCH_WINDOWS = True
+MATCH_WINDOWS = False
 
 # Bin edge for the window length, in days (from 0 to up infinity).
 # Fixed edges, so every campaign is binned the same way.
@@ -49,9 +52,11 @@ MIN_PER_CLASS_PER_BIN = 1
 # of each setting combination go to their own folders, so runs never overwrite
 # each other and the evaluation script always read the data built with the
 # CURRENT settings. (ALWAYS run build_features.py after changing settings.)
-RUN_TAG = (f"min{MIN_POSTS}_cap{CAP_POSTS}"
+
+# The tag describes only the settings that change the data. The "viz_" prefix
+# keeps these files separate from the earlier evaluation runs.
+RUN_TAG = (f"viz_min{MIN_POSTS}_cap{CAP_POSTS}"
            + ("_floor" if FLOOR_TO_MINUTE else "")
-           + ("_match" if MATCH_WINDOWS else "")
            + f"_{len(CAMPAIGNS)}c")
 
 
@@ -78,4 +83,14 @@ EXPECTED = {
     "Iran_1": (660,5015),
     "Iran_2": (389,6615),
     "Iran_3": (210,2240),
+    "Iran_4": (2519,7612),
+    "Iran_5": (104,1247),
+    "Iran_6": (209,16885),
+    "Russia_1": (3293,31303),
+    "Russia_2": (361,2175),
+    "Russia_3": (5,780),
+    "Russia_4": (24,36533),
+    "Russia_5": (51,13077),
+    "Spain": (216,1681),
+    "Qatar": (29,19481)
 }

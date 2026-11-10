@@ -1,0 +1,23 @@
+feature,group,campaign,n_io,n_ctrl,fewer_than_20_io,median_io,median_ctrl,mean_io,mean_ctrl,frac_nan,auc_raw,ks,spearman_with_window_days,auc_within_window_bins,auc_within_short_windows,auc_within_long_windows,n_window_bins_used,n_io_in_window_bins
+dup_text_share,content,Armenia,19,721,True,0.0667,0.0,0.1843,0.0456,0.0,0.7836,0.5384,-0.003,,,,0.0,0.0
+dup_text_share,content,Bangladesh,8,347,True,0.0,0.0,0.0222,0.0373,0.0,0.5675,0.2136,0.0085,,,,0.0,0.0
+dup_text_share,content,Catalonia,30,1164,False,0.0,0.0,0.0033,0.0123,0.0,0.469,0.0605,0.0026,,,,0.0,0.0
+dup_text_share,content,China_1,440,18988,False,0.0,0.0,0.0429,0.0373,0.0002,0.5435,0.091,-0.0597,0.5406,0.5665,0.5335,5.0,295.0
+dup_text_share,content,China_2,165,17441,False,0.0,0.0,0.0322,0.0546,0.0002,0.5057,0.0469,-0.0825,0.5006,,0.5006,4.0,117.0
+dup_text_share,content,Cuba,437,12905,False,0.0,0.0,0.0336,0.0425,0.0002,0.541,0.0957,-0.0389,0.4812,0.5767,0.4076,7.0,292.0
+dup_text_share,content,Ecuador,416,7914,False,0.0,0.0,0.0988,0.0343,0.0001,0.6262,0.2246,0.0012,0.6678,,0.6678,2.0,184.0
+dup_text_share,content,Egypt,214,168,False,0.0,0.0,0.0054,0.0177,0.0,0.4777,0.0527,-0.0212,,,,0.0,0.0
+dup_text_share,content,Iran_1,539,2135,False,0.0,0.0,0.0695,0.0486,0.0007,0.5252,0.0656,-0.0426,0.7181,0.7181,,1.0,22.0
+dup_text_share,content,Iran_2,285,3168,False,0.0,0.0,0.0338,0.029,0.0006,0.5508,0.0989,-0.0602,0.533,0.5267,0.5344,3.0,109.0
+dup_text_share,content,Iran_3,192,944,False,0.0,0.0,0.012,0.0321,0.0,0.4766,0.0524,-0.0269,0.4074,0.4074,,1.0,79.0
+dup_text_share,content,Iran_4,985,3274,False,0.0,0.0,0.0134,0.0257,0.0002,0.4757,0.0469,-0.0825,,,,0.0,0.0
+dup_text_share,content,Iran_5,23,490,False,0.0,0.0,0.0103,0.0223,0.0,0.5208,0.0551,-0.0419,,,,0.0,0.0
+dup_text_share,content,Iran_6,180,7645,False,0.0,0.0,0.0169,0.0321,0.0001,0.4974,0.0419,-0.0645,0.3561,,0.3561,1.0,22.0
+dup_text_share,content,Qatar,21,7864,False,0.0,0.0,0.0552,0.0237,0.0003,0.635,0.2459,-0.0134,,,,0.0,0.0
+dup_text_share,content,Russia_1,2595,14061,False,0.0,0.0,0.0055,0.0499,0.0002,0.4145,0.1612,-0.1592,0.42,0.4631,0.4178,9.0,2434.0
+dup_text_share,content,Russia_2,243,954,False,0.0,0.0,0.0086,0.0382,0.0,0.4209,0.1593,-0.2128,,,,0.0,0.0
+dup_text_share,content,Russia_3,4,371,True,0.0,0.0,0.0,0.0194,0.0,0.4245,0.1509,-0.073,,,,0.0,0.0
+dup_text_share,content,Russia_4,19,17075,True,0.0,0.0,0.0107,0.0269,0.0001,0.5091,0.0749,-0.0422,,,,0.0,0.0
+dup_text_share,content,Russia_5,30,6286,False,0.0,0.0,0.0449,0.0237,0.0,0.541,0.084,0.0151,,,,0.0,0.0
+dup_text_share,content,Spain,163,694,False,0.0,0.0,0.0125,0.0195,0.0,0.5342,0.0764,-0.0322,,,,0.0,0.0
+dup_text_share,content,ALL (pooled),7008,124609,False,0.0,0.0,0.0245,0.0374,0.0002,0.4803,0.0375,-0.0634,,,,,

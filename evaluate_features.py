@@ -42,7 +42,7 @@ data = pd.concat(pd.read_parquet(p) for p in OUT.glob("*.parquet")).reset_index(
 CAMPAIGNS_PRESENT = sorted(data.campaign.unique())
 
 # ---- Behavioral features, split into the three groups used in build_features.py
-TIMING = ["hour_entropy", "gap_median_s", "gap_cv", "burstiness", "frac_gap_lt_60s"]
+TIMING = ["hour_entropy", "gap_median_s", "burstiness", "frac_gap_lt_60s"]
 CONTENT = ["dup_text_share", "text_len_mean", "hashtag_rate", "url_rate", "mention_rate"]
 ACTIVITY = ["repost_share", "reply_share"]
 BEHAVIOR = TIMING + CONTENT + ACTIVITY

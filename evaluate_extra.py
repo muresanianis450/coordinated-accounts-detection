@@ -37,7 +37,7 @@ data = pd.concat(pd.read_parquet(p) for p in OUT.glob("*.parquet")).reset_index(
 CAMPAIGNS_PRESENT = sorted(data.campaign.unique())
 
 # Same feature groups as in evaluate.py
-BEHAVIOR = ["hour_entropy", "gap_median_s", "gap_cv", "burstiness", "frac_gap_lt_60s",
+BEHAVIOR = ["hour_entropy", "gap_median_s", "burstiness", "frac_gap_lt_60s",
             "dup_text_share", "text_len_mean", "hashtag_rate", "url_rate",
             "mention_rate", "repost_share", "reply_share"]
 META = ["n_posts_total", "followers", "following", "span_days", "account_age_days"]

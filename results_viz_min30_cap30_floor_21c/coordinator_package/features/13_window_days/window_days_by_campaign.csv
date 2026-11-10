@@ -1,0 +1,23 @@
+feature,group,campaign,n_io,n_ctrl,fewer_than_20_io,median_io,median_ctrl,mean_io,mean_ctrl,frac_nan,auc_raw,ks,spearman_with_window_days,auc_within_window_bins,auc_within_short_windows,auc_within_long_windows,n_window_bins_used,n_io_in_window_bins
+window_days,diagnostic,Armenia,19,721,True,2.6569,0.2424,3.4111,4.3131,0.0,0.8028,0.662,1.0,,,,0.0,0.0
+window_days,diagnostic,Bangladesh,8,347,True,26.7549,0.1861,183.7062,5.019,0.0,0.9888,0.9827,1.0,,,,0.0,0.0
+window_days,diagnostic,Catalonia,30,1164,False,60.0465,0.3038,110.0503,3.1007,0.0,0.9276,0.9153,1.0,,,,0.0,0.0
+window_days,diagnostic,China_1,440,18991,False,24.9226,0.2299,222.1662,1.449,0.0,0.9161,0.7916,1.0,0.5445,0.5545,0.5418,5.0,295.0
+window_days,diagnostic,China_2,166,17444,False,22.6049,0.2483,525.3101,2.5528,0.0,0.9177,0.8586,1.0,0.6036,,0.6036,4.0,118.0
+window_days,diagnostic,Cuba,437,12908,False,2.934,0.3042,51.6552,10.7577,0.0,0.8135,0.6509,1.0,0.4496,0.5214,0.3944,7.0,292.0
+window_days,diagnostic,Ecuador,416,7915,False,11.1747,0.2979,55.7236,9.184,0.0,0.9326,0.8747,1.0,0.3852,,0.3852,2.0,184.0
+window_days,diagnostic,Egypt,214,168,False,10.3719,0.2969,123.3307,0.3381,0.0,0.9708,0.9206,1.0,,,,0.0,0.0
+window_days,diagnostic,Iran_1,540,2136,False,21.4649,0.2458,77.9664,1.4656,0.0,0.9456,0.9184,1.0,0.2039,0.2039,,1.0,23.0
+window_days,diagnostic,Iran_2,286,3169,False,12.4233,0.2882,72.9293,5.326,0.0,0.8807,0.8241,1.0,0.3091,0.3073,0.3096,3.0,109.0
+window_days,diagnostic,Iran_3,192,944,False,2.0281,0.2552,30.3446,0.9962,0.0,0.5697,0.5259,1.0,0.066,0.066,,1.0,79.0
+window_days,diagnostic,Iran_4,985,3275,False,133.9458,0.284,156.3388,2.6734,0.0,0.9871,0.9801,1.0,,,,0.0,0.0
+window_days,diagnostic,Iran_5,23,490,False,44.6153,0.3139,50.6207,0.4743,0.0,0.9984,0.9959,1.0,,,,0.0,0.0
+window_days,diagnostic,Iran_6,180,7646,False,6.4226,0.25,51.7188,4.2217,0.0,0.9704,0.9331,1.0,0.3571,,0.3571,1.0,22.0
+window_days,diagnostic,Qatar,21,7866,False,22.375,0.3826,150.8989,13.2811,0.0,0.9678,0.9556,1.0,,,,0.0,0.0
+window_days,diagnostic,Russia_1,2597,14062,False,36.6792,0.2347,95.8458,2.2506,0.0,0.9614,0.9239,1.0,0.5231,0.481,0.5253,9.0,2436.0
+window_days,diagnostic,Russia_2,243,954,False,150.0819,0.25,176.3223,0.9404,0.0,0.9662,0.9557,1.0,,,,0.0,0.0
+window_days,diagnostic,Russia_3,4,371,True,10.9642,0.2792,11.9394,0.4048,0.0,0.9993,0.9973,1.0,,,,0.0,0.0
+window_days,diagnostic,Russia_4,19,17076,True,31.2312,0.2861,163.7128,11.3075,0.0,0.9745,0.9222,1.0,,,,0.0,0.0
+window_days,diagnostic,Russia_5,30,6286,False,13.499,0.3104,111.9317,10.5715,0.0,0.9472,0.9269,1.0,,,,0.0,0.0
+window_days,diagnostic,Spain,163,694,False,2.4271,0.2965,3.4597,0.3711,0.0,0.9088,0.8055,1.0,,,,0.0,0.0
+window_days,diagnostic,ALL (pooled),7013,124627,False,27.2278,0.2694,113.6743,6.0284,0.0,0.9302,0.8812,1.0,,,,,

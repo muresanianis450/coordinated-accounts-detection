@@ -25,7 +25,7 @@ data = pd.concat(pd.read_parquet(p) for p in OUT.glob("*.parquet"))
 
 # ----------- Feature groups ----------------------------------------
 # Behavior features: describe WHAT the account does (timing, content, activity)
-BEHAVIOR = ["hour_entropy","gap_median_s","gap_cv","burstiness","frac_gap_lt_60s",
+BEHAVIOR = ["hour_entropy","gap_median_s","burstiness","frac_gap_lt_60s",
             "dup_text_share","text_len_mean","hashtag_rate","url_rate",
             "mention_rate","repost_share","reply_share"]
 
@@ -43,7 +43,6 @@ def models():
     model keeps what it learned in a previous fold"""
     # lambda = a tiny function; each call gives a new imputer.
     # Median imputation replaces missing features values (NaN) by the column median,
-    # needed because e.g. gap_cv is NaN for some accounts and sklearn models
     # cannot handle NaN (except HistGradientBoosting, which handles it itself).
     imp = lambda: SimpleImputer(strategy="median")
     return {
